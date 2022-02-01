@@ -315,7 +315,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MF2X2E877U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChildsDay/Info.plist;
+				INFOPLIST_FILE = ChildsDay/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Childs Day";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -343,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MF2X2E877U;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ChildsDay/Info.plist;
+				INFOPLIST_FILE = ChildsDay/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Childs Day";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
