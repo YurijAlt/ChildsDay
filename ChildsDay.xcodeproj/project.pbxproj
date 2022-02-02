@@ -11,7 +11,7 @@
 		C45794712796CDE500039356 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45794702796CDE500039356 /* TimerViewController.swift */; };
 		C45794762796CDE600039356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45794752796CDE600039356 /* Assets.xcassets */; };
 		C45794792796CDE600039356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45794772796CDE600039356 /* LaunchScreen.storyboard */; };
-		C47611C427A9BAD90083881B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47611C327A9BAD90083881B /* DetailsViewController.swift */; };
+		C47611C427A9BAD90083881B /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47611C327A9BAD90083881B /* DetailsTableViewController.swift */; };
 		C47611C627A9BAF50083881B /* AdviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47611C527A9BAF50083881B /* AdviceViewController.swift */; };
 		C4C0F37F27A320D600972A65 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0F37E27A320D600972A65 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +23,7 @@
 		C45794752796CDE600039356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C45794782796CDE600039356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C457947A2796CDE600039356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C47611C327A9BAD90083881B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C47611C327A9BAD90083881B /* DetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		C47611C527A9BAF50083881B /* AdviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceViewController.swift; sourceTree = "<group>"; };
 		C4C0F37E27A320D600972A65 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +71,7 @@
 			children = (
 				C4C0F37E27A320D600972A65 /* TabBarController.swift */,
 				C45794702796CDE500039356 /* TimerViewController.swift */,
-				C47611C327A9BAD90083881B /* DetailsViewController.swift */,
+				C47611C327A9BAD90083881B /* DetailsTableViewController.swift */,
 				C47611C527A9BAF50083881B /* AdviceViewController.swift */,
 			);
 			path = ViewControllers;
@@ -168,7 +168,7 @@
 				C4C0F37F27A320D600972A65 /* TabBarController.swift in Sources */,
 				C457946D2796CDE500039356 /* AppDelegate.swift in Sources */,
 				C47611C627A9BAF50083881B /* AdviceViewController.swift in Sources */,
-				C47611C427A9BAD90083881B /* DetailsViewController.swift in Sources */,
+				C47611C427A9BAD90083881B /* DetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
