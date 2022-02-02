@@ -44,6 +44,7 @@ class TabBarController: UITabBarController {
         navigationVC.tabBarItem.image = image
         navigationVC.navigationBar.topItem?.title = title
         navigationVC.navigationBar.prefersLargeTitles = true
+    
         return navigationVC
     }
     //Настройка внешнего вида UITabBar
