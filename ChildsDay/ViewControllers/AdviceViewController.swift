@@ -8,10 +8,11 @@
 import UIKit
 
 class AdviceViewController: UIViewController {
-
+    
+    //MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
     }
 
 }

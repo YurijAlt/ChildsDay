@@ -9,37 +9,46 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
+    //MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         let timerViewController = TimerViewController()
         let detailsViewController = DetailsViewController()
         let adviceViewController = AdviceViewController()
         
-        //Добавить картинки в Assets, избавиться от Force unwrap.
         viewControllers = [
             generateNavigationController(
                 rootViewController: timerViewController,
-                title: "Timer",
-                image: UIImage(systemName: "circle")!
+                image: #imageLiteral(resourceName: "timer"),
+                title: "Timer"
             ),
             generateNavigationController(
                 rootViewController: detailsViewController,
-                title: "Details",
-                image: UIImage(systemName: "circle")!
+                image: #imageLiteral(resourceName: "details"),
+                title: "Details"
             ),
             generateNavigationController(
                 rootViewController: adviceViewController,
-                title: "Advice",
-                image: UIImage(systemName: "circle")!
+                image: #imageLiteral(resourceName: "advice"),
+                title: "Advice"
             )
         ]
-    }
+        
+        setupTabBar()
     
-    private func generateNavigationController(rootViewController: UIViewController, title: String, image: UIImage) -> UIViewController {
+    }
+    //MARK: Private Methods
+    private func generateNavigationController(rootViewController: UIViewController, image: UIImage, title: String) -> UIViewController {
         let navigationVC = UINavigationController(rootViewController: rootViewController)
-        navigationVC.tabBarItem.title = title
         navigationVC.tabBarItem.image = image
+        navigationVC.navigationBar.topItem?.title = title
+        navigationVC.navigationBar.prefersLargeTitles = true
         return navigationVC
+    }
+    //Настройка внешнего вида UITabBar
+    private func setupTabBar() {
+        tabBar.tintColor = #colorLiteral(red: 0.9803488851, green: 0.8623965979, blue: 0, alpha: 1)
+        tabBar.barTintColor = .red
     }
 }
