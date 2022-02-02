@@ -10,6 +10,8 @@ import UIKit
 class TimerViewController: UIViewController {
     
     //MARK: Private Properties
+    
+    //Первый ряд круглых кнопок
     private lazy var button: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .green
@@ -25,6 +27,46 @@ class TimerViewController: UIViewController {
         buttonTwo.layer.cornerRadius = 20
         return buttonTwo
     }()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    private lazy var dreamButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .green
+        button.setTitle("Dream", for: .normal)
+        button.layer.cornerRadius = 20
+        return button
+    }()
+    private lazy var eatButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .green
+        button.setTitle("Eat", for: .normal)
+        button.layer.cornerRadius = 20
+        return button
+    }()
+    private lazy var activityButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.backgroundColor = .green
+        button.setTitle("Activity", for: .normal)
+        button.layer.cornerRadius = 20
+        return button
+    }()
+    //StackView
+    private lazy var firstHorizontalStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [dreamButton, eatButton, activityButton])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        return stackView
+    }()
+
+    
+    //Второй ряд круглых кнопок
     
     
     
@@ -50,6 +92,7 @@ class TimerViewController: UIViewController {
         view.backgroundColor = .white
 
         setup(subviews: timerLabel)
+        view.addSubview(firstHorizontalStackView)
         setConstraints()
         
 //        let stackView = UIStackView(arrangedSubviews: [button, buttonTwo])
@@ -74,11 +117,17 @@ class TimerViewController: UIViewController {
         }
     }
     
+
+    
     private func setConstraints() {
         
         
-        timerLabel.translatesAutoresizingMaskIntoConstraints = false
+
         
+        
+        
+        
+        firstHorizontalStackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             timerLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 180),
 //            timerLabel.rightAnchor.constraint(equalTo: view.rightAnchor),
@@ -87,6 +136,16 @@ class TimerViewController: UIViewController {
             timerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
         
+        
+        
+        
+        timerLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+        
+            firstHorizontalStackView.topAnchor.constraint(equalTo: timerLabel.bottomAnchor, constant: 50),
+            firstHorizontalStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            
+        ])
         
         
 //        button.translatesAutoresizingMaskIntoConstraints = false
