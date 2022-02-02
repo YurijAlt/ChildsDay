@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C457946D2796CDE500039356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457946C2796CDE500039356 /* AppDelegate.swift */; };
-		C457946F2796CDE500039356 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457946E2796CDE500039356 /* SceneDelegate.swift */; };
 		C45794712796CDE500039356 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45794702796CDE500039356 /* TimerViewController.swift */; };
 		C45794762796CDE600039356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45794752796CDE600039356 /* Assets.xcassets */; };
 		C45794792796CDE600039356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45794772796CDE600039356 /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		C45794692796CDE500039356 /* ChildsDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildsDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C457946C2796CDE500039356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C457946E2796CDE500039356 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C45794702796CDE500039356 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		C45794752796CDE600039356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C45794782796CDE600039356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				C457946C2796CDE500039356 /* AppDelegate.swift */,
-				C457946E2796CDE500039356 /* SceneDelegate.swift */,
 				C457947A2796CDE600039356 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -170,7 +167,6 @@
 				C45794712796CDE500039356 /* TimerViewController.swift in Sources */,
 				C4C0F37F27A320D600972A65 /* TabBarController.swift in Sources */,
 				C457946D2796CDE500039356 /* AppDelegate.swift in Sources */,
-				C457946F2796CDE500039356 /* SceneDelegate.swift in Sources */,
 				C47611C627A9BAF50083881B /* AdviceViewController.swift in Sources */,
 				C47611C427A9BAD90083881B /* DetailsViewController.swift in Sources */,
 			);
