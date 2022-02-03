@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    //MARK: Override Methods
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -38,7 +38,7 @@ class TabBarController: UITabBarController {
         setupTabBar()
     
     }
-    //MARK: Private Methods
+    //MARK: - Private Methods
     private func generateNavigationController(rootViewController: UIViewController, image: UIImage, title: String) -> UIViewController {
         let navigationVC = UINavigationController(rootViewController: rootViewController)
         navigationVC.tabBarItem.image = image
