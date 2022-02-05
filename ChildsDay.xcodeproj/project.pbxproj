@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4373AC827AEF4DF004ADF2C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4373AC727AEF4DE004ADF2C /* Schedule.swift */; };
+		C4373ACB27AEF82A004ADF2C /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4373ACA27AEF82A004ADF2C /* StorageManager.swift */; };
+		C4373ACF27AEFABC004ADF2C /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4373ACD27AEFABC004ADF2C /* Storage.xcdatamodeld */; };
 		C457946D2796CDE500039356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C457946C2796CDE500039356 /* AppDelegate.swift */; };
 		C45794712796CDE500039356 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45794702796CDE500039356 /* TimerViewController.swift */; };
 		C45794762796CDE600039356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45794752796CDE600039356 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4373AC727AEF4DE004ADF2C /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		C4373ACA27AEF82A004ADF2C /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C4373ACE27AEFABC004ADF2C /* Storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
 		C45794692796CDE500039356 /* ChildsDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildsDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C457946C2796CDE500039356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45794702796CDE500039356 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4373AC927AEF4E8004ADF2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4373AC727AEF4DE004ADF2C /* Schedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4373ACC27AEFA84004ADF2C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4373ACA27AEF82A004ADF2C /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C45794602796CDE500039356 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +80,8 @@
 		C457946B2796CDE500039356 /* ChildsDay */ = {
 			isa = PBXGroup;
 			children = (
+				C4373ACC27AEFA84004ADF2C /* Services */,
+				C4373AC927AEF4E8004ADF2C /* Models */,
 				C47611C827A9BB510083881B /* SupportingFiles */,
 				C47611C727A9BB060083881B /* ViewControllers */,
 				C47611C927A9BB820083881B /* Source */,
@@ -81,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C457946C2796CDE500039356 /* AppDelegate.swift */,
+				C4373ACD27AEFABC004ADF2C /* Storage.xcdatamodeld */,
 				C457947A2796CDE600039356 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -164,8 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4373AC827AEF4DF004ADF2C /* Schedule.swift in Sources */,
+				C4373ACF27AEFABC004ADF2C /* Storage.xcdatamodeld in Sources */,
 				C45794712796CDE500039356 /* TimerViewController.swift in Sources */,
 				C4C0F37F27A320D600972A65 /* TabBarController.swift in Sources */,
+				C4373ACB27AEF82A004ADF2C /* StorageManager.swift in Sources */,
 				C457946D2796CDE500039356 /* AppDelegate.swift in Sources */,
 				C47611C627A9BAF50083881B /* AdviceViewController.swift in Sources */,
 				C47611C427A9BAD90083881B /* DetailsTableViewController.swift in Sources */,
@@ -380,6 +408,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4373ACD27AEFABC004ADF2C /* Storage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4373ACE27AEFABC004ADF2C /* Storage.xcdatamodel */,
+			);
+			currentVersion = C4373ACE27AEFABC004ADF2C /* Storage.xcdatamodel */;
+			path = Storage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C45794612796CDE500039356 /* Project object */;
 }
