@@ -10,6 +10,11 @@ import UIKit
 class TimerViewController: UIViewController {
     
     //MARK: - Private Properties
+    
+    private var timer = Timer()
+    private var count = 0
+    private var timerCounting = true
+    
     //Лэйбл с таймером/секундомером
     private lazy var timerLabel: UILabel = {
         let label = UILabel()
@@ -22,11 +27,14 @@ class TimerViewController: UIViewController {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "sleep"), for: .normal)
         button.layer.masksToBounds = false
+        button.addTarget(self, action: #selector(start), for: .touchUpInside)
+        button.addTarget(self, action: #selector(changeButtonColor), for: .touchUpInside)
         return button
     }()
     private lazy var eatButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "eat"), for: .normal)
+        button.addTarget(self, action: #selector(start), for: .touchUpInside)
         return button
     }()
     private lazy var activityButton: UIButton = {
@@ -80,6 +88,48 @@ class TimerViewController: UIViewController {
     }
     
     //MARK: - Private Methods
+    
+    
+    @objc private func changeButtonColor() {
+        sleepButton.setImage(UIImage(named: "activity"), for: .normal)
+    }
+    
+    @objc private func start() {
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerUpdate), userInfo: Date(), repeats: true)
+        
+        timerCounting.toggle()
+        
+    }
+    
+    @objc private func timerUpdate() {
+        count = count + 1
+        let time = secondsToHoursMinutesSeconds(seconds: count)
+        let timeSting = makeTimeString(hours: time.0, minutes: time.1, seconds: time.2)
+        timerLabel.text = timeSting
+    }
+    
+    func secondsToHoursMinutesSeconds(seconds: Int) -> (Int, Int, Int) {
+        return ((seconds / 3600), ((seconds % 3600) / 60),((seconds % 3600) % 60))
+    }
+    
+    func makeTimeString(hours: Int, minutes: Int, seconds : Int) -> String {
+        var timeString = ""
+        timeString += String(format: "%02d", hours)
+        timeString += ":"
+        timeString += String(format: "%02d", minutes)
+        timeString += ":"
+        timeString += String(format: "%02d", seconds)
+        return timeString
+    }
+    
+    
+    @objc private func stop() {
+
+        
+    }
+    
+    
     private func setup(subviews: UIView...) {
         subviews.forEach { subview in
             view.addSubview(subview)
